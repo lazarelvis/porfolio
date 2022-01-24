@@ -1,7 +1,22 @@
-import React from 'react';
+import React from "react";
+import { Dot } from "./BrackgroundStyle";
 
 const BackgroundAnimation = () => (
-  <div>
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <div style={{ position: "absolute" }}>
+      <Dot>
+        <img
+          style={{ borderRadius: "50%", height: "200px", width: "200px" }}
+          src="/images/profile1.jpg"
+        />
+      </Dot>
+    </div>
     <svg
       className="BgAnimation__svg"
       viewBox="0 0 602 602"
